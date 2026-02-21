@@ -1,0 +1,16 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - assignment-03
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build -t assignment-03 ./assignment-03
