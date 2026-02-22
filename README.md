@@ -44,7 +44,7 @@ Se nos abre la configuración del entorno. Damos en entorno de servidor web, y l
 ![Entorn level](images/guia2.jpeg)
 
 Terminamos el proceso, y luego en cargar e implementar nuevamente y ahora si subimos lo que ya tenemos en el proyecto.
-![Upload files](images/guia 3.jpeg)
+![Upload files](images/guia3.jpeg)
 
 ---
 
@@ -60,3 +60,4 @@ Se configuró Husky para ejecutar:
 
 ```bash
 npm run build
+
