@@ -29,6 +29,9 @@ Se creó un Dockerfile multi-stage para:
 
 Se configuró para la gestión de variables de entorno y sincronización con GitHub.
 ![Secrets](images/secretos.jpeg)
+
+![Conection](images/conexion.jpeg)
+
 ---
 
 ## Despliegue en AWS Elastic Beanstalk
@@ -60,4 +63,5 @@ Se configuró Husky para ejecutar:
 
 ```bash
 npm run build
+
 
