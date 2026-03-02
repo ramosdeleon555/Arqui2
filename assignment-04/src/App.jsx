@@ -6,7 +6,7 @@ export default function App() {
       <div className="card">
         <h1>Mi Aplicación Dockerizada</h1>
         <p>Proyecto Assignment 04</p>
-        <button>Hola Mundo</button>
+        <button>HOLA MUNDO</button>
       </div>
     </div>
   )
