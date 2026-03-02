@@ -18,7 +18,7 @@ En cada commit realizado en la rama `assignment-04`, el pipeline:
 
 A continuación se muestra la aplicación ejecutándose en un contenedor Docker:
 
-![Aplicación funcionando](assingment-04/vistaweb.jpeg)
+![Aplicación funcionando](assignment-04/vistaweb.jpeg)
 
 ---
 
@@ -64,4 +64,5 @@ El pipeline realiza automáticamente:
 ## Rama de trabajo
 
 `assignment-04`
+
 
