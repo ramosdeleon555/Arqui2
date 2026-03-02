@@ -18,8 +18,10 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/assignment-04:${{ github.sha }} \
-                       -t ${{ secrets.DOCKERHUB_USERNAME }}/assignment-04:latest .
+          docker build \
+            -t ${{ secrets.DOCKERHUB_USERNAME }}/assignment-04:${{ github.sha }} \
+            -t ${{ secrets.DOCKERHUB_USERNAME }}/assignment-04:latest \
+            ./assignment-04
 
       - name: Push Docker image
         run: |
