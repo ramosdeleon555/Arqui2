@@ -18,7 +18,7 @@ En cada commit realizado en la rama `assignment-04`, el pipeline:
 
 A continuación se muestra la aplicación ejecutándose en un contenedor Docker:
 
-![Aplicación funcionando](vistaweb.jpeg)
+![Aplicación funcionando](assingment-04/vistaweb.jpeg)
 
 ---
 
@@ -41,12 +41,12 @@ Se realizaron múltiples commits, generando múltiples versiones de la imagen.
 
 Captura de pantalla mostrando la imagen en Docker Hub:
 
-![Imagen en Docker Hub](image.jpeg)
+![Imagen en Docker Hub](assignment-04/image.jpeg)
 
 Capturas mostrando los tags en Docker Hub:
 
-![Tags en Docker Hub 1](tag1.jpeg)
-![Tags en Docker Hub 2](tag2.jpeg)
+![Tags en Docker Hub 1](assignment-04/tag1.jpeg)
+![Tags en Docker Hub 2](assignment-04/tag2.jpeg)
 
 ---
 
@@ -64,3 +64,4 @@ El pipeline realiza automáticamente:
 ## Rama de trabajo
 
 `assignment-04`
+
