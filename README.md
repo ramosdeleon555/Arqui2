@@ -34,21 +34,23 @@ https://hub.docker.com/r/ramosdeleon/assignment-04
 
 Se realizaron múltiples commits, generando múltiples versiones de la imagen.
 
-- latest
-- SHA1
-- SHA2
-- SHA3
+- latest  
+- SHA1  
+- SHA2  
+- SHA3  
 
-Captura de pantalla mostrando la imagen en Docker Hub: 
+Captura de pantalla mostrando la imagen en Docker Hub:
+
 ![Imagen en Docker Hub](image.jpeg)
 
-Captura de pantalla mostrando los tags en Docker Hub:
+Capturas mostrando los tags en Docker Hub:
 
-![Tags en Docker Hub](tag1.jpeg)(tag2.jpeg)
+![Tags en Docker Hub 1](tag1.jpeg)
+![Tags en Docker Hub 2](tag2.jpeg)
 
 ---
 
-## ⚙️ Pipeline de GitHub Actions
+## Pipeline de GitHub Actions
 
 El pipeline realiza automáticamente:
 
@@ -59,8 +61,6 @@ El pipeline realiza automáticamente:
 
 ---
 
-## 📂 Rama de trabajo
-
-La rama utilizada para esta actividad fue:
+## Rama de trabajo
 
 `assignment-04`
