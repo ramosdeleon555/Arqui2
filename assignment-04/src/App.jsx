@@ -5,7 +5,7 @@ export default function App() {
     <div className="container">
       <div className="card">
         <h1>Mi Aplicación Dockerizada</h1>
-        <p>Bienvenido a mi app</p>
+        <p>Welcome to my app</p>
         <button>Hola Mundo</button>
       </div>
     </div>
