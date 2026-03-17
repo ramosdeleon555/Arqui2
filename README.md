@@ -2,11 +2,8 @@
 
 ## Enlaces
 
-Frontend:
-[[https://TU-FRONTEND.vercel.app](https://arqui2-git-assignment-05-ramosdeleon555s-projects.vercel.app/)]([https://TU-FRONTEND.vercel.app](https://arqui2-git-assignment-05-ramosdeleon555s-projects.vercel.app/))
-
-Backend:
-[https://arqui2-backend.onrender.com/tasks]([https://arqui2-backend.onrender.com/tasks](https://arqui2-backend.onrender.com/tasks))
+* **Frontend:** [arqui2-assignment-05 (Vercel)](https://arqui2-git-assignment-05-ramosdeleon555s-projects.vercel.app/)
+* **Backend API:** [arqui2-backend (Render)](https://arqui2-backend.onrender.com/tasks)
 
 ---
 
