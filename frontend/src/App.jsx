@@ -5,7 +5,7 @@ function App() {
   const [tasks, setTasks] = useState([])
   const [title, setTitle] = useState("")
 
-  const API = "http://localhost:3000"
+  const API = "https://arqui2-backend.onrender.com"
 
   const getTasks = async () => {
     const res = await fetch(API + "/tasks")
