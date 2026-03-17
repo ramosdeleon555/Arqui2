@@ -23,6 +23,12 @@ const swaggerDocument = {
         responses: {
           "200": { description: "OK" }
         }
+      },
+      post: {
+        summary: "Create task",
+        responses: {
+          "200": { description: "Task created" }
+        }
       }
     }
   }
@@ -32,6 +38,17 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 app.get("/tasks",(req,res)=>{
   res.json(tasks)
+})
+
+app.post("/tasks",(req,res)=>{
+  const task = {
+    id: Date.now(),
+    title: req.body.title
+  }
+
+  tasks.push(task)
+
+  res.json(task)
 })
 
 app.listen(3000,()=>{
