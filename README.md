@@ -102,11 +102,5 @@ Este proyecto implementa una API utilizando GraphQL, permitiendo consultar datos
 4. Enviar una consulta GraphQL en el body  
 5. Verificar la respuesta en formato JSON  
 
-## Cumplimiento de requisitos
-✔ Endpoint público GraphQL sin autenticación  
-✔ Esquema de modelos disponible  
-✔ Documentación de modelos  
-✔ API funcional  
-
 ## Conclusión
 GraphQL permite solicitar únicamente los campos necesarios desde un solo endpoint, evitando la sobrecarga de datos y eliminando la necesidad de múltiples rutas como en arquitecturas REST tradicionales.
