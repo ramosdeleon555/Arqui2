@@ -1,12 +1,15 @@
 const { ApolloServer, gql } = require('apollo-server');
-const mysql = require('mysql2/promise');
 
-const db = mysql.createPool({
-    host: 'localhost',
-    user: 'test',
-    password: '1234',
-    database: 'graphql_demo'
-});
+const usuarios = [
+  { id: 1, nombre: "Juan Perez", email: "juan@mail.com", edad: 25 },
+  { id: 2, nombre: "Maria Lopez", email: "maria@mail.com", edad: 30 }
+];
+
+const vehiculos = [
+  { id: 1, marca: "Toyota", modelo: "Corolla", anio: 2020, usuario_id: 1 },
+  { id: 2, marca: "Honda", modelo: "Civic", anio: 2019, usuario_id: 2 },
+  { id: 3, marca: "Mazda", modelo: "3", anio: 2021, usuario_id: 1 }
+];
 
 const typeDefs = gql`
     type Usuario {
@@ -32,30 +35,21 @@ const typeDefs = gql`
 `;
 
 const resolvers = {
-    Query: {
-        usuarios: async () => {
-            const [rows] = await db.query("SELECT * FROM usuarios");
-            return rows;
-        },
-        vehiculos: async () => {
-            const [rows] = await db.query("SELECT * FROM vehiculos");
-            return rows;
-        }
-    },
-
-    Usuario: {
-        vehiculos: async (parent) => {
-            const [rows] = await db.query(
-                "SELECT * FROM vehiculos WHERE usuario_id = ?",
-                [parent.id]
-            );
-            return rows;
-        }
+  Query: {
+    usuarios: () => usuarios,
+    vehiculos: () => vehiculos
+  },
+  Usuario: {
+    vehiculos: (parent) => {
+      return vehiculos.filter(v => v.usuario_id === parent.id);
     }
+  }
 };
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
-server.listen({ port: 4000 }).then(({ url }) => {
-    console.log(`Servidor listo en ${url}`);
+server.listen({
+  port: process.env.PORT || 4000
+}).then(({ url }) => {
+  console.log(`Servidor listo en ${url}`);
 });
